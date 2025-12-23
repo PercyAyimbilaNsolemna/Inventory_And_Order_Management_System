@@ -1,0 +1,9 @@
+CREATE TABLE `Inventory` (
+  `InventoryID` INT AUTO_INCREMENT PRIMARY KEY,
+  `ProductID` INT NOT NULL,
+  `QuantityOnHand` INT DEFAULT 0,
+  `QuantityOnHold` INT DEFAULT 0,
+  `ReorderLevel` INT NOT NULL,
+  `LastUpdated` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  FOREIGN KEY (ProductID) REFERENCES Products(ProductID)
+)

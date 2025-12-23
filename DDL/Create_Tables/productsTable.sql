@@ -1,0 +1,9 @@
+CREATE TABLE IF NOT EXISTS `Products` (
+  `ProductID` INT AUTO_INCREMENT PRIMARY KEY,
+  `ProductName` VARCHAR(150) NOT NULL,
+  `ProductCategory` INT NOT NULL,
+  `Price` DECIMAL(10,2) NOT NULL,
+  `SKU` VARCHAR(50) UNIQUE NOT NULL,
+  `CreatedAt` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (ProductCategory) REFERENCES Product_Categories(CategoryID)
+)
