@@ -1,9 +1,9 @@
-CREATE TABLE IF NOT EXISTS Orders (
-  OrderID INT AUTO_INCREMENT PRIMARY KEY,
-  CustomerID INT NOT NULL,
-  OrderDate TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-  TotalAmount DECIMAL(10,2) DEFAULT 0.00,
-  CurrentStatus ENUM('Pending','Shipped','Delivered') DEFAULT 'Pending',
-  CreatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-  FOREIGN KEY (CustomerID) REFERENCES Customer(CustomerID)
+CREATE TABLE IF NOT EXISTS `Orders` (
+  `OrderID` INT AUTO_INCREMENT PRIMARY KEY,
+  `CustomerID` INT NOT NULL,
+  `OrderDate` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  `TotalAmount` DECIMAL(10,2) DEFAULT 0.00,
+  `CurrentStatus` ENUM('Pending','Shipped','Delivered') DEFAULT 'Pending',
+  `CreatedAt` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID)
 )
