@@ -3,7 +3,7 @@ def read_sql_file(filename):
         with open(filename, 'r', encoding='utf-8') as f:
             sql_script = f.read()
     except FileNotFoundError:
-        print(f"Invalid file path {filename}")
+        print(f"Invalid file path: {filename}")
         return None
     
     return sql_script
