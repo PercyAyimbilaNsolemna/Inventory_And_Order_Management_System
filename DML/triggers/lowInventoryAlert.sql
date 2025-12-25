@@ -8,6 +8,8 @@
     3. It should not create duplicate alerts for the same product in the same low-inventory state.
 */
 
+DROP TRIGGER IF EXISTS trg_low_inventory_alert;
+
 CREATE TRIGGER trg_low_inventory_alert
 AFTER UPDATE ON Inventories
 FOR EACH ROW

@@ -26,6 +26,7 @@
 
 */
 
+DROP PROCEDURE IF EXISTS ProcessNewOrder;
 
 CREATE PROCEDURE ProcessNewOrder(
     IN inCustomerID INT,
