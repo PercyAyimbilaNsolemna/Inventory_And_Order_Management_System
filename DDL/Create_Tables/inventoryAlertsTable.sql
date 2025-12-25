@@ -5,6 +5,7 @@ CREATE TABLE IF NOT EXISTS `Inventory_Alerts` (
   `AlertDate` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
   `IsResolved` BOOLEAN DEFAULT FALSE,
   `ResolvedByStaffID` INT,
+  `ResolvedDate` TIMESTAMP,
   FOREIGN KEY (ProductID) REFERENCES Products(ProductID),
   FOREIGN KEY (ResolvedByStaffID) REFERENCES Procurement_Staff(StaffID)
 )
