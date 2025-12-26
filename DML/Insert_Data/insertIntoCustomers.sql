@@ -1,4 +1,16 @@
 INSERT INTO `Customers` (CustomerID, FirstName, LastName, Email, Phone, ShippingAddress, CreatedAt, IsActive) VALUES
 (1, 'John', 'Mensah', 'johnmensah@example.com', '+233201234567', 'Accra, Ghana', '2024-12-01 12:00:00', TRUE),
 (2, 'Ama', 'Boateng', 'amaboateng@example.com', '+233545678901', 'Kumasi, Ghana', '2024-12-03 10:30:00', TRUE),
-(3, 'Samuel', 'Osei', 'samuelosei@example.com', '+233501111222', 'Takoradi, Ghana', '2024-12-04 11:45:00', TRUE)
+(3, 'Samuel', 'Osei', 'samuelosei@example.com', '+233501111222', 'Takoradi, Ghana', '2024-12-04 11:45:00', TRUE),
+(4, 'Akosua', 'Adjei', 'akosuaadjei@example.com', '+233244567890', 'Tema, Ghana', '2024-12-05 09:15:00', TRUE),
+(5, 'Kwame', 'Asante', 'kwameasante@example.com', '+233559876543', 'Cape Coast, Ghana', '2024-12-06 14:30:00', TRUE),
+(6, 'Abena', 'Owusu', 'abenaowusu@example.com', '+233208765432', 'Sunyani, Ghana', '2024-12-07 10:00:00', TRUE),
+(7, 'Kofi', 'Antwi', 'kofiantwi@example.com', '+233543216789', 'Tamale, Ghana', '2024-12-08 11:20:00', TRUE),
+(8, 'Efua', 'Darko', 'efuadarko@example.com', '+233261234567', 'Ho, Ghana', '2024-12-09 13:45:00', TRUE),
+(9, 'Yaw', 'Boakye', 'yawboakye@example.com', '+233557654321', 'Bolgatanga, Ghana', '2024-12-10 15:00:00', TRUE),
+(10, 'Adjoa', 'Ofori', 'adjoaofori@example.com', '+233209871234', 'Wa, Ghana', '2024-12-11 09:30:00', TRUE),
+(11, 'Kwabena', 'Appiah', 'kwabenaappiah@example.com', '+233548765432', 'Koforidua, Ghana', '2024-12-12 10:45:00', TRUE),
+(12, 'Akua', 'Sarpong', 'akuasarpong@example.com', '+233276543210', 'Techiman, Ghana', '2024-12-13 12:00:00', TRUE),
+(13, 'Kwesi', 'Baah', 'kwesibaah@example.com', '+233501239876', 'Obuasi, Ghana', '2024-12-14 14:15:00', TRUE),
+(14, 'Adwoa', 'Frimpong', 'adwoafrimpong@example.com', '+233245678901', 'Berekum, Ghana', '2024-12-15 16:30:00', TRUE),
+(15, 'Fiifi', 'Nketia', 'fiifinketia@example.com', '+233558901234', 'Winneba, Ghana', '2024-12-16 11:00:00', TRUE)
