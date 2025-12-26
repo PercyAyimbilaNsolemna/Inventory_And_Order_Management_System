@@ -4,6 +4,5 @@ CREATE TABLE IF NOT EXISTS `Orders` (
   `OrderDate` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
   `TotalAmount` DECIMAL(10,2) DEFAULT 0.00,
   `CurrentStatus` ENUM('Pending','Shipped','Delivered') DEFAULT 'Pending',
-  `CreatedAt` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
   FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID)
 )
